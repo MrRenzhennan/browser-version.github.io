@@ -3,20 +3,20 @@ var version = {
 		return navigator.userAgent.toLowerCase().indexOf('android')!==-1;
 	},
 
-	isMac() {
-		return navigator.platform.toLowerCase().indexOf('mac') !== -1;
+	isIOS() {
+		return /iPhone/i.test(navigator.userAgent) || /iPad/i.test(navigator.userAgent) || /iPod/i.test(navigator.userAgent);
 	},
 
 	isWindows() {
 		return navigator.platform.toLowerCase().indexOf('win') !== -1;
 	},
 
-	isLinux() {
-		return navigator.platform.toLowerCase().indexOf('linux') !== -1;
+	isMac() {
+		return navigator.platform.toLowerCase().indexOf('mac') !== -1;
 	},
 
-	isIOS() {
-		return /iPhone/i.test(navigator.userAgent) || /iPad/i.test(navigator.userAgent) || /iPod/i.test(navigator.userAgent);
+	isLinux() {
+		return navigator.platform.toLowerCase().indexOf('linux') !== -1;
 	},
 
 	isMobileBrowser() {
@@ -26,20 +26,20 @@ var version = {
 		return /MicroMessenger/i.test(navigator.userAgent);
 	},
 
-	isIE() {
-		return navigator.userAgent.indexOf('MSIE') !== -1 || /Trident.*rv[ :]*11\./.test(navigator.userAgent);
+	isChrome() {
+		return /Chrome/i.test(navigator.userAgent);
 	},
 
 	isFirefox() {
 		return /Firefox/i.test(navigator.userAgent);
 	},
 
-	isChrome() {
-		return /Chrome/i.test(navigator.userAgent);
-	},
-
 	isSafari() {
 		return /Safari/i.test(navigator.userAgent) && !/Chrome/i.test(navigator.userAgent);
+	},
+
+	isIE() {
+		return navigator.userAgent.indexOf('MSIE') !== -1 || /Trident.*rv[ :]*11\./.test(navigator.userAgent);
 	},
 
 	isIE7() {
