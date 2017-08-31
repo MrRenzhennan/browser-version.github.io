@@ -1,4 +1,4 @@
-var ver = {
+var version = {
 	isAndroid() {
 		return navigator.userAgent.toLowerCase().indexOf('android')!==-1;
 	},
