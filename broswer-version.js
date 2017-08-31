@@ -47,15 +47,15 @@ var version = {
 	},
 
 	isIE8() {
-		return navigator.userAgent.indexOf('MSIE 8.') !=== -1;
+		return navigator.userAgent.indexOf('MSIE 8.') !== -1;
 	},
 
 	isIE9() {
-		return navigator.userAgent.indexOf('MSIE 9.') !=== -1;
+		return navigator.userAgent.indexOf('MSIE 9.') !== -1;
 	},
 
 	isIE10() {
-		return navigator.userAgent.indexOf('MSIE 10.') !=== -1;
+		return navigator.userAgent.indexOf('MSIE 10.') !== -1;
 	},
 
 	isIE11() {
